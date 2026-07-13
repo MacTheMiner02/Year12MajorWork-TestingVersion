@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{%- from "notification.html" import notification as notification -%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Band Dashboard</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <nav class="navbar">
+            <div class="left">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+            </div>
+            <div class="right">
+                {% if current_user.is_authenticated %}
+                    <a href="/dashboard">Dashboard</a>
+                    <a href="/logout">Log Out</a>
+                {% else %}
+                    <a href="/login">Sign In</a>
+                    <a href="/sign-up">Sign Up</a>
+                {% endif %}
+            </div>
+        </nav>
+
+    <main class="content">
+        <h1>Your Dashboard</h1>
+        <hr>
+        
+        <h2>Your Stats:</h2>
+        <p>Overall Rating: {{ stats[0] }}</p>
+        <p>Likes: {{ stats[1] }}</p>
+        <p>Dislikes: {{ stats[2] }}</p>
+
+        <hr>
+        <h2>Notifications</h2>
+        {% if notifications %}
+            {% for booking in notifications %}
+                {% if booking.status == "pending" or booking.status == "host-seen-pending" %}
+                     {{ notification(
+                        "Performance request at " ~ booking.booking_location ~ " on " ~ booking.booking_date ~ " has been made! The host left this message: " ~ booking.message,
+                        "red",
+                        "Accept Booking", "/book/accept/" ~ booking.booking_id,
+                        "Deny Booking", "/book/deny/" ~ booking.booking_id
+                        ) }}
+                {% elif booking.status == "band-deny" or booking.status == "host-seen-band-deny" %}
+                    {{ notification(
+                        "You denied a booking!",
+                        "green",
+                        "Ok", "/book/accept/" ~ booking.booking_id,
+                        ) }}
+                {% elif booking.status == "band-accept" %}
+                    {{ notification(
+                        "You accepted a booking!",
+                        "green",
+                        "Ok", "/book/accept/" ~ booking.booking_id,
+                        ) }}
+                {% elif booking.status == "host-deny" %}
+                    {{ notification(
+                        "Your booking at " ~ booking.booking_location ~ " on " ~ booking.booking_date ~ " has been cancelled by the host",
+                        "red",
+                        "Ok", "/book/accept/" ~ booking.booking_id,
+                        ) }}
+                {% elif booking.status == "confirmed" or booking.status == "host-seen" %}
+                    {{ notification(
+                        "Your booking at " ~ booking.booking_location ~ " on " ~ booking.booking_date ~ " has been confirmed! To contact the host further, use their provided email address: " ~ booking.host_email,
+                        "green",
+                        "Ok", "/book/accept/" ~ booking.booking_id,
+                        ) }}
+                {% endif %}
+
+            {% endfor %}
+        {% else %}
+            <p>No notifications</p>
+        {% endif %}
+    </main>
+</body>
+</html>

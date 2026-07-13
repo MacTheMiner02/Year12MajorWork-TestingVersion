@@ -1,0 +1,18 @@
+{% macro notification(message, color, accept_label,
+    accept_action, deny_label=None, deny_action=None) %}
+
+    <div class="notification-card" style="background-color: {{ color }}">
+        <p>{{ message }}</p>
+        {% if deny_label %}
+            <form action="{{ deny_action }}" method="POST">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                <button class="normal-button">{{ deny_label }}</button>
+            </form>
+        {% endif %}
+        <form action="{{ accept_action }}" method="POST">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            <button class="normal-button">{{ accept_label }}</button>
+        </form>
+    </div>
+
+{% endmacro %}

@@ -1,0 +1,562 @@
+[
+  {
+    "band_name": "Metallica",
+    "email": "metallica@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Thrash Metal",
+    "location": "Sydney",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 60,
+    "dislikes": 3
+  },
+  {
+    "band_name": "Shinedown",
+    "email": "shinedown@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Hard Rock",
+    "location": "Brisbane",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 500,
+    "dislikes": 0
+  },
+  {
+    "band_name": "Judas Priest",
+    "email": "judaspriest@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Heavy Metal",
+    "location": "Brisbane",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 30,
+    "dislikes": 12
+  },
+  {
+    "band_name": "Black Sabbath",
+    "email": "blacksabbath@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Heavy Metal",
+    "location": "Tamworth",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 33,
+    "dislikes": 53
+  },
+  {
+    "band_name": "Disturbed",
+    "email": "disturbed@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Nu Metal",
+    "location": "Newcastle",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 82,
+    "dislikes": 34
+  },
+  {
+    "band_name": "AC/DC",
+    "email": "acdc@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Rock",
+    "location": "Adelaide",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 120,
+    "dislikes": 50
+  },
+  {
+    "band_name": "Queen",
+    "email": "queen@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Classic Rock",
+    "location": "Newcastle",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 70,
+    "dislikes": 10
+  },
+  {
+    "band_name": "Alex Warren",
+    "email": "alexwarren@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Indie Pop",
+    "location": "Sydney",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 100,
+    "dislikes": 20
+  },
+  {
+    "band_name": "Dean Lewis",
+    "email": "deanlewis@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Indie Pop",
+    "location": "Perth",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 29,
+    "dislikes": 5
+  },
+  {
+    "band_name": "Weezer",
+    "email": "weezer@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Alt Rock",
+    "location": "Perth",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 103,
+    "dislikes": 70
+  },
+  {
+    "band_name": "Coldplay",
+    "email": "coldplay@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Pop Rock",
+    "location": "Tamworth",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 80,
+    "dislikes": 70
+  },
+  {
+    "band_name": "Dream Theater",
+    "email": "dreamtheater@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Prog Metal",
+    "location": "Melbourne",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 200,
+    "dislikes": 20
+  },
+  {
+    "band_name": "Mozart",
+    "email": "mozart@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Classical",
+    "location": "Canberra",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 140,
+    "dislikes": 30
+  },
+  {
+    "band_name": "C418",
+    "email": "c418@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Ambient",
+    "location": "Rockhampton",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 22,
+    "dislikes": 7
+  },
+  {
+    "band_name": "David Bowie",
+    "email": "davidbowie@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Classic Rock",
+    "location": "Sydney",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 80,
+    "dislikes": 5
+  },
+  {
+    "band_name": "Pink Floyd",
+    "email": "pinkfloyd@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Classic Rock",
+    "location": "Tamworth",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 100,
+    "dislikes": 30
+  },
+  {
+    "band_name": "Red Hot Chili Peppers",
+    "email": "redhotchilipeppers@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Alt Rock",
+    "location": "Brisbane",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 60,
+    "dislikes": 7
+  },
+  {
+    "band_name": "The Beatles",
+    "email": "thebeatles@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Classic Rock",
+    "location": "Melbourne",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 180,
+    "dislikes": 2
+  },
+  {
+    "band_name": "Green Day",
+    "email": "greenday@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Punk Rock",
+    "location": "Brisbane",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 100,
+    "dislikes": 34
+  },
+  {
+    "band_name": "Blink-182",
+    "email": "blink182@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Pop Punk",
+    "location": "Gold Coast",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 57,
+    "dislikes": 21
+  },
+  {
+    "band_name": "My Chemical Romance",
+    "email": "mychemicalromance@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Emo",
+    "location": "Wollongong",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 56,
+    "dislikes": 34
+  },
+  {
+    "band_name": "The Cure",
+    "email": "thecure@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Post Punk",
+    "location": "Adelaide",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 89,
+    "dislikes": 53
+  },
+  {
+    "band_name": "The Ramones",
+    "email": "theramones@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Punk",
+    "location": "Geelong",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 12,
+    "dislikes": 3
+  },
+  {
+    "band_name": "Taylor Swift",
+    "email": "taylorswift@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Country Pop",
+    "location": "Darwin",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 2,
+    "dislikes": 300
+  },
+  {
+    "band_name": "Johnny Cash",
+    "email": "johnnycash@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Classic Country",
+    "location": "Tamworth",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 90,
+    "dislikes": 43
+  },
+  {
+    "band_name": "Dolly Parton",
+    "email": "dollyparton@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Country",
+    "location": "Toowoomba",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 49,
+    "dislikes": 92
+  },
+  {
+    "band_name": "The Highwaymen",
+    "email": "thehighwaymen@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Outlaw Country",
+    "location": "Cairns",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 61,
+    "dislikes": 35
+  },
+  {
+    "band_name": "Mumford and Sons",
+    "email": "mumfordandsons@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Bluegrass",
+    "location": "Hobart",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 30,
+    "dislikes": 32
+  },
+  {
+    "band_name": "Beethoven",
+    "email": "beethoven@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Romantic",
+    "location": "Canberra",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 54,
+    "dislikes": 12
+  },
+  {
+    "band_name": "Bach",
+    "email": "bach@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Baroque",
+    "location": "Canberra",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 132,
+    "dislikes": 43
+  },
+  {
+    "band_name": "Vivaldi",
+    "email": "vivaldi@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Baroque",
+    "location": "Melbourne",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 65,
+    "dislikes": 2
+  },
+  {
+    "band_name": "Miles Davis",
+    "email": "milesdavis@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Jazz",
+    "location": "Sydney",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 94,
+    "dislikes": 6
+  },
+  {
+    "band_name": "John Coltrane",
+    "email": "johncoltrane@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Bebop",
+    "location": "Brisbane",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 43,
+    "dislikes": 21
+  },
+  {
+    "band_name": "Louis Armstrong",
+    "email": "louisarmstrong@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Swing",
+    "location": "Adelaide",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 89,
+    "dislikes": 45
+  },
+  {
+    "band_name": "Norah Jones",
+    "email": "norahjones@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Smooth Jazz",
+    "location": "Gold Coast",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 102,
+    "dislikes": 4
+  },
+  {
+    "band_name": "Mahavishnu Orchestra",
+    "email": "mahavishnu@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Jazz Fusion",
+    "location": "Wollongong",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 73,
+    "dislikes": 73
+  },
+  {
+    "band_name": "B.B. King",
+    "email": "bbking@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Blues",
+    "location": "Newcastle",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 80,
+    "dislikes": 50
+  },
+  {
+    "band_name": "Muddy Waters",
+    "email": "muddywaters@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Delta Blues",
+    "location": "Rockhampton",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 32,
+    "dislikes": 15
+  },
+  {
+    "band_name": "Buddy Guy",
+    "email": "buddyguy@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Chicago Blues",
+    "location": "Geelong",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 67,
+    "dislikes": 43
+  },
+  {
+    "band_name": "Stevie Ray Vaughan",
+    "email": "stevierayvaughan@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Electric Blues",
+    "location": "Perth",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 69,
+    "dislikes": 23
+  },
+  {
+    "band_name": "Daft Punk",
+    "email": "daftpunk@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "House",
+    "location": "Sydney",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 85,
+    "dislikes": 83
+  },
+  {
+    "band_name": "Aphex Twin",
+    "email": "aphextwin@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Techno",
+    "location": "Melbourne",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 55,
+    "dislikes": 60
+  },
+  {
+    "band_name": "Pendulum",
+    "email": "pendulum@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Drum and Bass",
+    "location": "Perth",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 12,
+    "dislikes": 14
+  },
+  {
+    "band_name": "Eminem",
+    "email": "eminem@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Hardcore Hip-hop",
+    "location": "Sydney",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 43,
+    "dislikes": 50
+  },
+  {
+    "band_name": "Kendrick Lamar",
+    "email": "kendricklamar@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Conscious Hip-hop",
+    "location": "Melbourne",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 84,
+    "dislikes": 80
+  },
+  {
+    "band_name": "Travis Scott",
+    "email": "travisscott@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Trap",
+    "location": "Brisbane",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 76,
+    "dislikes": 23
+  },
+  {
+    "band_name": "Grandmaster Flash",
+    "email": "grandmasterflash@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Old School",
+    "location": "Gold Coast",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 87,
+    "dislikes": 30
+  },
+  {
+    "band_name": "Beyonce",
+    "email": "beyonce@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "R&B",
+    "location": "Sydney",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 90,
+    "dislikes": 29
+  },
+  {
+    "band_name": "The Weeknd",
+    "email": "theweeknd@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Contemporary R&B",
+    "location": "Melbourne",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 62,
+    "dislikes": 17
+  },
+  {
+    "band_name": "Aretha Franklin",
+    "email": "arethafranklin@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Soul",
+    "location": "Adelaide",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 89,
+    "dislikes": 32
+  },
+  {
+    "band_name": "James Brown",
+    "email": "jamesbrown@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Funk",
+    "location": "Hobart",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 68,
+    "dislikes": 39
+  },
+  {
+    "band_name": "Marvin Gaye",
+    "email": "marvingaye@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Motown",
+    "location": "Darwin",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 66,
+    "dislikes": 13
+  },
+  {
+    "band_name": "Bob Dylan",
+    "email": "bobdylan@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Folk",
+    "location": "Toowoomba",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 104,
+    "dislikes": 50
+  },
+  {
+    "band_name": "The Dubliners",
+    "email": "thedubliners@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Celtic Folk",
+    "location": "Cairns",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 0,
+    "dislikes": 3
+  },
+  {
+    "band_name": "Bon Iver",
+    "email": "boniver@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Indie Folk",
+    "location": "Wollongong",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 0,
+    "dislikes": 0
+  },
+  {
+    "band_name": "Fleet Foxes",
+    "email": "fleetfoxes@email.com",
+    "password": "H3ll0w0rld!",
+    "genre": "Folk",
+    "location": "Geelong",
+    "youtube_link": "https://www.youtube.com/watch?v=ObKFZEeBcGQ",
+    "likes": 53,
+    "dislikes": 9
+  }
+]

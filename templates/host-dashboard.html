@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+{%- from "notification.html" import notification as notification -%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Host Dashboard</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <nav class="navbar">
+            <div class="left">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+            </div>
+            <div class="right">
+                {% if current_user.is_authenticated %}
+                    <a href="/dashboard">Dashboard</a>
+                    <a href="/logout">Log Out</a>
+                {% else %}
+                    <a href="/login">Sign In</a>
+                    <a href="/sign-up">Sign Up</a>
+                {% endif %}
+            </div>
+        </nav>
+
+    <main class="content">
+        <h1>Your Dashboard</h1>
+        <hr>
+        <h2>Notifications</h2>
+        {% if notifications %}
+            {% for booking in notifications %}
+                {% if booking.status == "pending" %}
+                    {{ notification(
+                        "You made a booking request for " ~ booking.band_name ~ " on " ~ booking.booking_date ~ " at " ~ booking.booking_location,
+                        "green",
+                        "Ok", "/book/accept/" ~ booking.booking_id,
+                        ) }}
+                {% elif booking.status == "band-deny" or booking.status == "band-seen-band-deny" %}
+                    {{ notification(
+                        booking.band_name ~ " declined your booking request on " ~ booking.booking_date ~ " at " ~ booking.booking_location,
+                        "green",
+                        "Ok", "/book/accept/" ~ booking.booking_id,
+                        ) }}
+                {% elif booking.status == "band-accept" or booking.status == "band-seen-band-accept" %}
+                    {{ notification(
+                        booking.band_name + " accepted your request on" ~ booking.booking_date ~ " at " ~ booking.booking_location,
+                        "red",
+                        "Confirm Booking", "/book/accept/" ~ booking.booking_id,
+                        "Cancel Booking", "/book/deny/" ~ booking.booking_id
+                        ) }}
+                {% elif booking.status == "host-deny" or booking.status == "band-seen-host-deny" %}
+                    {{ notification(
+                        "You declined your booking for " ~ booking.band_name ~ " on " ~ booking.booking_date ~ " at " ~ booking.booking_location,
+                        "green",
+                        "Ok", "/book/accept/" ~ booking.booking_id,
+                        ) }}
+                {% elif booking.status == "confirmed" or booking.status == "band-seen" %}
+                    {{ notification(
+                        "You confirmed your booking for " ~ booking.band_name ~ " on " ~ booking.booking_date ~ " at " ~ booking.booking_location ~ "! To contact them further, use their provided email address: " ~ booking.band_email,
+                        "green",
+                        "Ok", "/book/accept/" ~ booking.booking_id,
+                        ) }}
+                {% elif booking.status == "unreviewed" %}
+                    {{ notification(
+                        "What did you think of " ~ booking.band_name ~ " ? ",
+                        "red",
+                        "I liked them", "/book/accept/" ~ booking.booking_id,
+                        "Didn't like them", "/book/accept/" ~ booking.booking_id
+                        ) }}
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            <p>No notifications</p>
+        {% endif %}
+        <hr>
+        <h2>Hiring</h2>
+        <p>Ready to hire a band? Click below to begin searching for the perfect band for your event!</p>
+        <p></p>
+        <a href="/band-browse"><button class="normal-button" style="width: 20%">Browse Bands</button></a>
+    </main>
+</body>
+</html>
