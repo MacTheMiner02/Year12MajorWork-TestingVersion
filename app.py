@@ -333,7 +333,7 @@ def band_dashboard():
         return redirect(url_for('dashboard'))
 
     band = BandUser.query.filter_by(id=current_user.id).first()
-    overall_rating = round(band.likes / (band.dislikes + band.likes) * 100)
+    overall_rating = round(band.likes / (band.dislikes + band.likes + 1) * 100)
     stats = [overall_rating, band.likes, band.dislikes]
 
     # All the types of notification that should show up on the band dashboard are listed here
