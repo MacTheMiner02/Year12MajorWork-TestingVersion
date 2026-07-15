@@ -10,6 +10,7 @@ import os
 import datetime
 import math
 
+import security_utils
 # Imports from other files
 from security_utils import (validate_input, validate_password, validate_email_address,
                             validate_youtube_link, sanitize_input)
@@ -458,6 +459,21 @@ def book_band(band_id):
     booking_location = request.form.get('location')
     booking_date = request.form.get('date')
     message = request.form.get('message')
+
+    band = BandUser.query.get_or_404(band_id)
+    embed_url = band.youtube_link
+
+    if not validate_input(booking_location):
+        return render_template('band-info.html', booking_location=booking_location, booking_date=booking_date,
+                               message=message, band=band, embed_url=embed_url)
+
+    if not validate_input(booking_date):
+        return render_template('band-info.html', booking_location=booking_location, booking_date=booking_date,
+                               message=message, band=band, embed_url=embed_url)
+
+    if not validate_input(message):
+        return render_template('band-info.html', booking_location=booking_location, booking_date=booking_date,
+                               message=message, band=band, embed_url=embed_url)
 
     # Find the band data from the database
     band = BandUser.query.get_or_404(band_id)
